@@ -8,7 +8,7 @@ spec:
   
   source:
     repoURL: https://github.com/CSU-ITMO-2025-2/team-2-helm-agro
-    targetRevision: security
+    targetRevision: security-argocd
     path: deploy/helm
     helm:
       releaseName: team2
