@@ -57,6 +57,9 @@ tolerations: []
 
 affinity: {}
 
+jwt:
+  secret: "c222b01d8b735ca58e22cd54d8794725718d8b29069ed6448a027777680d0775"
+
 env:
   ORDER_SERVICE_URL: "http://order-service:8000"
 
@@ -77,4 +80,3 @@ readinessProbe:
   periodSeconds: 5
   timeoutSeconds: 3
   failureThreshold: 3
-
