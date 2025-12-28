@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: team2-kafka
+  name: team2-kafka-v2
   namespace: argocd
 spec:
   project: team2
@@ -10,6 +10,10 @@ spec:
     repoURL: https://github.com/CSU-ITMO-2025-2/team2-helm-agro
     targetRevision: security
     path: deploy/helm/kafka
+    helm:
+      parameters:
+          name: persistence.storageClass
+          value: "local-path"
   
   destination:
     server: https://kubernetes.default.svc
