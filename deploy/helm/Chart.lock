@@ -1,0 +1,24 @@
+dependencies:
+- name: sealed-secrets
+  repository: https://bitnami-labs.github.io/sealed-secrets
+  version: 2.14.2
+- name: postgres
+  repository: file://./postgres
+  version: 0.1.0
+- name: kafka
+  repository: file://./kafka
+  version: 0.1.0
+- name: order-service
+  repository: file://./order-service
+  version: 0.1.0
+- name: api-gateway
+  repository: file://./api-gateway
+  version: 0.1.0
+- name: notification-service
+  repository: file://./notification-service
+  version: 0.1.0
+- name: analytics-service
+  repository: file://./analytics-service
+  version: 0.1.0
+digest: sha256:88e1f91968c2e4f6a6c250f0b7b453c15ab804417312dbfc75233021d2bac307
+generated: "2025-12-28T06:13:34.932228231+05:00"
