@@ -63,12 +63,15 @@ database:
   port: 5432
   name: orders
   user: app
-  password: app  # In production, use Secret
 
 # Kafka configuration
 kafka:
   bootstrapServers: kafka-kafka:9092  # Service name from kafka chart
   orderEventsTopic: order-events
+
+# Sealed Secrets - encrypted values (generate with kubeseal)
+secrets:
+  databasePassword: "AgBy3i4OJSWK1..."  # Replace with encrypted database password
 
 env: {}
 
@@ -89,4 +92,3 @@ readinessProbe:
   periodSeconds: 5
   timeoutSeconds: 3
   failureThreshold: 3
-

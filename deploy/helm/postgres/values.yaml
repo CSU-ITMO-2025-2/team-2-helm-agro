@@ -33,7 +33,10 @@ resources:
 database:
   name: orders
   user: app
-  password: app  # In production, use Secret
+
+# Sealed Secrets - encrypted values (generate with kubeseal)
+secrets:
+  postgresPassword: "AgBy3i4OJSWK1..."  # Replace with encrypted postgres password
 
 env: {}
 
@@ -62,4 +65,3 @@ readinessProbe:
   periodSeconds: 5
   timeoutSeconds: 3
   failureThreshold: 3
-

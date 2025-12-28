@@ -1,6 +1,15 @@
 # Global values for all services (optional)
 global: {}
 
+# Sealed Secrets configuration
+sealed-secrets:
+  enabled: true
+  installCRDs: true
+  namespace: kube-system
+  rbac:
+    create: true
+    clusterRole: true
+
 # Override values for individual services if needed
 postgres:
   enabled: true

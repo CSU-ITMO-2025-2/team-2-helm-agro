@@ -61,6 +61,7 @@ build/
 # Docker
 .dockerignore
 
-# Secrets (uncomment if you want to exclude them from git)
-# Note: Currently secrets are in templates, consider Sealed Secrets for GitOps
+# Secrets - Sealed Secrets implementation
+# Plain text secrets should never be committed
+# Encrypted secrets in values.yaml files are safe to commit
 # deploy/helm/*/templates/secret.yaml
