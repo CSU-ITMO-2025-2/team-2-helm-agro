@@ -1,0 +1,21 @@
+# Global values for all services (optional)
+global: {}
+
+# Override values for individual services if needed
+postgres:
+  enabled: true
+
+kafka:
+  enabled: true
+
+order-service:
+  enabled: true
+
+api-gateway:
+  enabled: true
+
+notification-service:
+  enabled: true
+
+analytics-service:
+  enabled: true
