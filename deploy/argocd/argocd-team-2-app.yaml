@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: team-2-app
+  name: team2-app
   namespace: argocd
 spec:
-  project: team-2
+  project: team2
   
   source:
     repoURL: https://github.com/CSU-ITMO-2025-2/team-2-helm-agro
@@ -15,7 +15,7 @@ spec:
   
   destination:
     server: https://kubernetes.default.svc
-    namespace: team-2
+    namespace: team2
   
   syncPolicy:
     automated:
