@@ -18,10 +18,10 @@ kafka:
     tag: "7.3.2"
   resources:
     limits:
-      cpu: 1000m
+      cpu: 500m
       memory: 1Gi
     requests:
-      cpu: 500m
+      cpu: 100m
       memory: 512Mi
   persistence:
     enabled: true
